@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth T T - Portfolio</title>
+    <style>
+        /* Reset some basic styles */
+        body, h1, h2, h3, p, a, form, input, textarea {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        #about {
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 2rem;
+            background-color: #fafafa;
+        }
+
+        #skills h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        #projects h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project {
+            margin-bottom: 1.5rem;
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+            background-color: #f4f4f4;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .project a:hover {
+            background-color: #ddd;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 2rem;
+            background-color: #fafafa;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #444;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                text-align: center;
+            }
+
+            .skill, .project {
+                margin-bottom: 20px;
+            }
+
+            form input, form textarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hemanth T T</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Hemanth T T,I specialize in Java development, C++, and full-stack web development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>Java Development</h3>
+            <p>Experienced in building robust and scalable applications.</p>
+        </div>
+        <div class="skill">
+            <h3>C++</h3>
+            <p>Proficient in object-oriented programming and systems-level applications.</p>
+        </div>
+        <div class="skill">
+            <h3>Full-Stack Development</h3>
+            <p>Skilled in building dynamic websites and applications with the MERN stack.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Savio Clothing Website</h3>
+            <p>A full-fledged e-commerce platform for Savio Clothing, showcasing the latest trends in fashion.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Java App</h3>
+            <p>Developed a Java-based application for real-time data processing.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hemanth T T. All rights reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/hemanth-tt">LinkedIn</a> |
+            <a href="https://github.com/hemanth-tt">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
